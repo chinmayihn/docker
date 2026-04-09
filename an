@@ -1,0 +1,173 @@
+1. What is JUnit and what are its features?
+JUnit is a popular Java testing framework used for writing and running unit tests.
+Features:
+•	Supports automated testing 
+•	Provides annotations for test structure 
+•	Assertions to validate results 
+•	Test runners to execute tests 
+•	Integration with build tools like Maven & Gradle 
+•	Supports parameterized tests (JUnit 5) 
+________________________________________
+2. Important annotations in JUnit
+•	@Test – marks a test method 
+•	@BeforeEach – runs before each test 
+•	@AfterEach – runs after each test 
+•	@BeforeAll – runs once before all tests 
+•	@AfterAll – runs once after all tests 
+•	@Disabled – skips a test 
+•	@DisplayName – custom test name 
+________________________________________
+3. JUnit assert methods
+Used to validate expected results:
+•	assertEquals(expected, actual) 
+•	assertNotEquals() 
+•	assertTrue(), assertFalse() 
+•	assertNull(), assertNotNull() 
+•	assertThrows() (JUnit 5) 
+________________________________________
+4. Difference between JUnit 4 and JUnit 5
+•	JUnit 5 is modular (JUnit Platform, Jupiter, Vintage) 
+•	Better annotations (@BeforeEach instead of @Before) 
+•	Supports lambda expressions 
+•	Improved assertions and extensions 
+•	More flexible and extensible than JUnit 4 
+________________________________________
+5. Testing exceptions in JUnit 5
+Use assertThrows():
+assertThrows(ArithmeticException.class, () -> {
+    int result = 10 / 0;
+});
+It verifies that a specific exception is thrown.
+________________________________________
+6. What is JaCoCo and why is it used?
+JaCoCo is a code coverage tool for Java.
+Used for:
+•	Measuring test coverage 
+•	Identifying untested code 
+•	Improving code quality 
+________________________________________
+7. Generate and run JaCoCo report
+Steps:
+1.	Add JaCoCo plugin in Maven/Gradle 
+2.	Run tests (mvn test) 
+3.	Generate report (mvn jacoco:report) 
+4.	View report in target/site/jacoco/index.html 
+________________________________________
+8. Improve code coverage using JaCoCo
+•	Write more unit tests 
+•	Cover edge cases and exceptions 
+•	Test all branches and conditions 
+•	Use integration tests 
+•	Refactor complex code 
+________________________________________
+9. Define Docker and key features
+Docker is a containerization platform to package applications with dependencies.
+Features:
+•	Lightweight containers 
+•	Fast deployment 
+•	Portability 
+•	Isolation 
+•	Version control via images 
+________________________________________
+10. Docker images, Dockerfile, Docker Hub
+•	Docker Image: Read-only template for containers 
+•	Dockerfile: Script to build images 
+•	Docker Hub: Online repository for storing images 
+________________________________________
+11. Lifecycle of a Docker container
+•	Create → Start → Run → Pause → Stop → Remove
+Containers move through these stages during execution. 
+________________________________________
+12. Key components of Docker architecture
+•	Docker Client 
+•	Docker Daemon 
+•	Docker Images 
+•	Docker Containers 
+•	Docker Registry (Docker Hub) 
+________________________________________
+13. Virtualization vs Containerization
+•	Virtualization uses VMs with full OS 
+•	Containerization shares host OS 
+•	Containers are lightweight and faster 
+•	VMs are heavier but more isolated 
+________________________________________
+14. Start, stop, kill Docker container
+•	Start: docker start <id> 
+•	Stop: docker stop <id> 
+•	Kill: docker kill <id> (force stop) 
+________________________________________
+15. Purpose of volume in Docker run
+Volumes are used to:
+•	Persist data outside containers 
+•	Share data between containers 
+•	Avoid data loss when container stops 
+________________________________________
+16. Why multiple deployment systems?
+They address:
+•	Scalability issues 
+•	Environment differences 
+•	Continuous deployment needs 
+•	Automation challenges 
+________________________________________
+17. What is virtualization and components?
+Virtualization creates virtual machines on a physical system.
+Components:
+•	Hypervisor 
+•	Virtual Machines 
+•	Host OS 
+•	Guest OS 
+________________________________________
+18. Client vs server-side execution
+•	Client-side runs on user's browser (JavaScript) 
+•	Server-side runs on server (Java, Python) 
+•	Client-side is faster for UI 
+•	Server-side handles logic & security 
+________________________________________
+19. What is Puppet and its working?
+Puppet is a configuration management tool.
+•	Puppet Master: controls configurations 
+•	Puppet Agent: applies configurations
+Agents communicate with master to maintain system state. 
+________________________________________
+20. Benefits of Puppet
+•	Automation 
+•	Consistency 
+•	Scalability 
+•	Faster deployments 
+•	Reduced manual errors 
+________________________________________
+21. What are cloud solutions?
+Cloud solutions provide on-demand computing resources over the internet.
+They help in:
+•	Deployment 
+•	Storage 
+•	Scalability 
+•	Cost efficiency 
+________________________________________
+22. Key AWS services
+•	EC2 (compute) 
+•	S3 (storage) 
+•	RDS (database) 
+•	Lambda (serverless) 
+•	Elastic Beanstalk (deployment) 
+________________________________________
+23. Microsoft Azure features
+•	Virtual Machines 
+•	Azure App Services 
+•	Azure DevOps 
+•	Azure Storage 
+•	Strong integration with Microsoft tools 
+________________________________________
+24. AWS vs Azure
+•	AWS: wider services, more mature 
+•	Azure: better Microsoft integration 
+•	Both offer scalability and global deployment 
+•	Pricing and tools differ slightly 
+________________________________________
+25. Advantages of cloud deployment
+•	Scalability 
+•	Cost-effective (pay-as-you-go) 
+•	High availability 
+•	Easy maintenance 
+•	Global accessibility
+
